@@ -34,7 +34,7 @@ def test_new_layout_is_typed_correctly(make_bronze):
     row = silver.collect()[0]
     assert quarantine.count() == 0
     assert row["rental_id"] == 1
-    assert row["start_ts"] == datetime(2026, 6, 1, 8, 0)
+    assert silver.selectExpr("string(start_ts)").first()[0] == str(datetime(2026, 6, 1, 8, 0))
     assert row["duration_s"] == 1200
     assert row["duration_min"] == 20.0
     assert row["journey_date"] == date(2026, 6, 1)
