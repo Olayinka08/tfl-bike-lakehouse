@@ -1,0 +1,18 @@
+[project]
+name = "tfl-bike-lakehouse"
+version = "1.0.0"
+description = "Medallion lakehouse on Databricks for TfL Santander Cycles journey data"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "tests"]
+addopts = "-p no:cacheprovider"
+
+[tool.ruff]
+line-length = 120
+extend-exclude = ["notebooks"]  # notebooks use Databricks globals (spark, dbutils, display)
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]

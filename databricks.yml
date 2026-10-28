@@ -1,0 +1,82 @@
+# Databricks Asset Bundle: the whole job defined as code.
+# Deploy:   databricks bundle deploy
+# Run:      databricks bundle run tfl_lakehouse_pipeline
+# See SETUP_GUIDE.md Part 9 (optional) for CLI install and login.
+
+bundle:
+  name: tfl-bike-lakehouse
+
+variables:
+  catalog:
+    description: Unity Catalog catalog to build into
+    default: workspace
+  storage_mode:
+    description: volume (Free Edition) or adls (Azure Data Lake Storage Gen2)
+    default: volume
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://REPLACE-WITH-YOUR-WORKSPACE.cloud.databricks.com
+
+resources:
+  jobs:
+    tfl_lakehouse_pipeline:
+      name: tfl-lakehouse-pipeline
+      description: Bronze to Gold medallion pipeline for TfL Santander Cycles journeys, with a data quality gate.
+      max_concurrent_runs: 1
+      parameters:
+        - name: catalog
+          default: ${var.catalog}
+        - name: storage_mode
+          default: ${var.storage_mode}
+        - name: run_id
+          default: "{{job.run_id}}"
+      email_notifications:
+        on_failure:
+          - ${workspace.current_user.userName}
+      schedule:
+        quartz_cron_expression: "0 0 6 ? * MON"   # Mondays 06:00 London
+        timezone_id: Europe/London
+        pause_status: PAUSED                     # unpause when you want it automatic
+      # Alternative to the schedule: run whenever a new file lands in the volume
+      # trigger:
+      #   file_arrival:
+      #     url: /Volumes/workspace/tfl_bronze/landing/raw/journeys/
+      tasks:
+        - task_key: setup_catalog
+          notebook_task:
+            notebook_path: ./notebooks/00_setup_catalog.py
+
+        - task_key: bronze_ingest
+          depends_on: [{ task_key: setup_catalog }]
+          notebook_task:
+            notebook_path: ./notebooks/01_bronze_ingest.py
+
+        - task_key: silver_transform
+          depends_on: [{ task_key: bronze_ingest }]
+          max_retries: 1
+          notebook_task:
+            notebook_path: ./notebooks/02_silver_transform.py
+
+        - task_key: gold_aggregates
+          depends_on: [{ task_key: silver_transform }]
+          notebook_task:
+            notebook_path: ./notebooks/03_gold_aggregates.py
+
+        - task_key: data_quality
+          depends_on: [{ task_key: gold_aggregates }]
+          notebook_task:
+            notebook_path: ./notebooks/04_data_quality.py
+
+        - task_key: governance
+          depends_on: [{ task_key: data_quality }]
+          notebook_task:
+            notebook_path: ./notebooks/05_governance.py
+
+        - task_key: export_dashboard
+          depends_on: [{ task_key: data_quality }]
+          notebook_task:
+            notebook_path: ./notebooks/06_export_dashboard.py

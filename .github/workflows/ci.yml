@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Lint, unit tests, end-to-end smoke run
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - uses: actions/setup-java@v4   # Spark needs a JVM
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+
+      - name: Lint (ruff)
+        run: ruff check src tests scripts
+
+      - name: Unit tests (pytest + PySpark, ANSI mode on)
+        run: pytest -v
+
+      - name: End-to-end smoke run on synthetic data
+        run: |
+          python scripts/generate_sample_data.py --days 7 --trips-per-day 1000 --out /tmp/sample
+          python scripts/run_local_pipeline.py --input /tmp/sample --out /tmp/dashboard_data.json
+
+      - name: Upload smoke-run output
+        uses: actions/upload-artifact@v4
+        with:
+          name: smoke-run-dashboard-data
+          path: /tmp/dashboard_data.json
