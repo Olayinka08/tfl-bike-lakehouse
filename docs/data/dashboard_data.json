@@ -1,479 +1,927 @@
 {
  "meta": {
-  "source": "Synthetic sample in TfL format (replace with real export)",
-  "generated_at": "2026-10-28 12:01 UTC",
-  "date_from": "2026-06-01",
-  "date_to": "2026-06-14",
-  "days": 14,
-  "total_trips": 39746,
-  "quarantined_rows": 99,
-  "stations": 30,
-  "avg_duration_min": 19.5,
-  "ebike_share": 0.1815,
+  "source": "TfL Santander Cycles open data",
+  "generated_at": "2026-10-28 17:52 UTC",
+  "date_from": "2026-03-16",
+  "date_to": "2026-06-01",
+  "days": 78,
+  "total_trips": 2068001,
+  "quarantined_rows": 1173,
+  "stations": 804,
+  "avg_duration_min": 18.4,
+  "ebike_share": 0.1925,
   "dq_passed": 14,
   "dq_total": 14
  },
  "daily": [
   {
-   "date": "2026-06-01",
-   "trips": 3083,
-   "avg_duration_min": 16.84,
-   "ebike_share": 0.1862,
+   "date": "2026-03-16",
+   "trips": 24850,
+   "avg_duration_min": 15.17,
+   "ebike_share": 0.1973,
    "is_weekend": false
   },
   {
-   "date": "2026-06-02",
-   "trips": 3169,
-   "avg_duration_min": 16.88,
-   "ebike_share": 0.1805,
+   "date": "2026-03-17",
+   "trips": 29895,
+   "avg_duration_min": 15.77,
+   "ebike_share": 0.1954,
    "is_weekend": false
   },
   {
-   "date": "2026-06-03",
-   "trips": 2706,
-   "avg_duration_min": 16.84,
-   "ebike_share": 0.1892,
+   "date": "2026-03-18",
+   "trips": 31655,
+   "avg_duration_min": 16.6,
+   "ebike_share": 0.1796,
    "is_weekend": false
   },
   {
-   "date": "2026-06-04",
-   "trips": 2718,
-   "avg_duration_min": 16.8,
-   "ebike_share": 0.1766,
+   "date": "2026-03-19",
+   "trips": 30791,
+   "avg_duration_min": 16.61,
+   "ebike_share": 0.171,
    "is_weekend": false
   },
   {
-   "date": "2026-06-05",
-   "trips": 2894,
-   "avg_duration_min": 17.31,
-   "ebike_share": 0.1745,
+   "date": "2026-03-20",
+   "trips": 26631,
+   "avg_duration_min": 17.35,
+   "ebike_share": 0.1909,
    "is_weekend": false
   },
   {
-   "date": "2026-06-06",
-   "trips": 2623,
-   "avg_duration_min": 27.26,
-   "ebike_share": 0.1708,
+   "date": "2026-03-21",
+   "trips": 24547,
+   "avg_duration_min": 21.53,
+   "ebike_share": 0.1889,
    "is_weekend": true
   },
   {
-   "date": "2026-06-07",
-   "trips": 2529,
-   "avg_duration_min": 27.17,
-   "ebike_share": 0.1795,
+   "date": "2026-03-22",
+   "trips": 19658,
+   "avg_duration_min": 20.03,
+   "ebike_share": 0.1902,
    "is_weekend": true
   },
   {
-   "date": "2026-06-08",
-   "trips": 3168,
-   "avg_duration_min": 16.57,
+   "date": "2026-03-23",
+   "trips": 27159,
+   "avg_duration_min": 16.36,
+   "ebike_share": 0.1896,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-03-24",
+   "trips": 27109,
+   "avg_duration_min": 15.45,
+   "ebike_share": 0.1903,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-03-25",
+   "trips": 25226,
+   "avg_duration_min": 14.85,
+   "ebike_share": 0.198,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-03-26",
+   "trips": 27945,
+   "avg_duration_min": 15.9,
+   "ebike_share": 0.1993,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-03-27",
+   "trips": 21165,
+   "avg_duration_min": 15.3,
+   "ebike_share": 0.2182,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-03-28",
+   "trips": 20743,
+   "avg_duration_min": 19.22,
+   "ebike_share": 0.1983,
+   "is_weekend": true
+  },
+  {
+   "date": "2026-03-29",
+   "trips": 14411,
+   "avg_duration_min": 17.52,
+   "ebike_share": 0.1993,
+   "is_weekend": true
+  },
+  {
+   "date": "2026-03-30",
+   "trips": 23934,
+   "avg_duration_min": 16.05,
+   "ebike_share": 0.2062,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-03-31",
+   "trips": 27395,
+   "avg_duration_min": 16.93,
+   "ebike_share": 0.2019,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-04-01",
+   "trips": 26041,
+   "avg_duration_min": 16.53,
+   "ebike_share": 0.1841,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-04-02",
+   "trips": 23963,
+   "avg_duration_min": 17.05,
+   "ebike_share": 0.1943,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-04-03",
+   "trips": 15447,
+   "avg_duration_min": 19.37,
+   "ebike_share": 0.2063,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-04-04",
+   "trips": 17166,
+   "avg_duration_min": 21.02,
+   "ebike_share": 0.1968,
+   "is_weekend": true
+  },
+  {
+   "date": "2026-04-05",
+   "trips": 16101,
+   "avg_duration_min": 24.23,
+   "ebike_share": 0.1925,
+   "is_weekend": true
+  },
+  {
+   "date": "2026-04-06",
+   "trips": 19711,
+   "avg_duration_min": 24.4,
+   "ebike_share": 0.1903,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-04-07",
+   "trips": 27563,
+   "avg_duration_min": 20.0,
+   "ebike_share": 0.1889,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-04-08",
+   "trips": 31015,
+   "avg_duration_min": 20.54,
+   "ebike_share": 0.1929,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-04-09",
+   "trips": 27984,
+   "avg_duration_min": 17.25,
    "ebike_share": 0.1878,
    "is_weekend": false
   },
   {
-   "date": "2026-06-09",
-   "trips": 2975,
-   "avg_duration_min": 17.05,
+   "date": "2026-04-10",
+   "trips": 24584,
+   "avg_duration_min": 17.27,
+   "ebike_share": 0.2106,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-04-11",
+   "trips": 19867,
+   "avg_duration_min": 18.62,
+   "ebike_share": 0.2071,
+   "is_weekend": true
+  },
+  {
+   "date": "2026-04-12",
+   "trips": 18714,
+   "avg_duration_min": 19.65,
+   "ebike_share": 0.1982,
+   "is_weekend": true
+  },
+  {
+   "date": "2026-04-13",
+   "trips": 25475,
+   "avg_duration_min": 16.12,
+   "ebike_share": 0.1898,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-04-14",
+   "trips": 29295,
+   "avg_duration_min": 16.83,
+   "ebike_share": 0.1903,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-04-15",
+   "trips": 27793,
+   "avg_duration_min": 15.95,
+   "ebike_share": 0.192,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-04-16",
+   "trips": 28909,
+   "avg_duration_min": 16.61,
+   "ebike_share": 0.1858,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-04-17",
+   "trips": 27044,
+   "avg_duration_min": 17.28,
+   "ebike_share": 0.2025,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-04-18",
+   "trips": 26077,
+   "avg_duration_min": 22.15,
+   "ebike_share": 0.1951,
+   "is_weekend": true
+  },
+  {
+   "date": "2026-04-19",
+   "trips": 23266,
+   "avg_duration_min": 21.68,
+   "ebike_share": 0.1868,
+   "is_weekend": true
+  },
+  {
+   "date": "2026-04-20",
+   "trips": 27520,
+   "avg_duration_min": 16.34,
+   "ebike_share": 0.1865,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-04-21",
+   "trips": 33551,
+   "avg_duration_min": 18.16,
+   "ebike_share": 0.1887,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-04-22",
+   "trips": 35692,
+   "avg_duration_min": 18.89,
+   "ebike_share": 0.1846,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-04-23",
+   "trips": 35558,
+   "avg_duration_min": 18.92,
+   "ebike_share": 0.1759,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-04-24",
+   "trips": 33716,
+   "avg_duration_min": 19.35,
+   "ebike_share": 0.1891,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-04-25",
+   "trips": 29935,
+   "avg_duration_min": 23.38,
+   "ebike_share": 0.1822,
+   "is_weekend": true
+  },
+  {
+   "date": "2026-04-26",
+   "trips": 25052,
+   "avg_duration_min": 22.82,
+   "ebike_share": 0.1654,
+   "is_weekend": true
+  },
+  {
+   "date": "2026-04-27",
+   "trips": 30075,
+   "avg_duration_min": 17.12,
+   "ebike_share": 0.169,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-04-28",
+   "trips": 31201,
+   "avg_duration_min": 16.31,
+   "ebike_share": 0.187,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-04-29",
+   "trips": 31712,
+   "avg_duration_min": 16.69,
+   "ebike_share": 0.2003,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-04-30",
+   "trips": 32379,
+   "avg_duration_min": 17.26,
+   "ebike_share": 0.1883,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-05-01",
+   "trips": 31574,
+   "avg_duration_min": 20.44,
+   "ebike_share": 0.1912,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-05-02",
+   "trips": 23991,
+   "avg_duration_min": 22.02,
+   "ebike_share": 0.1826,
+   "is_weekend": true
+  },
+  {
+   "date": "2026-05-03",
+   "trips": 23078,
+   "avg_duration_min": 22.75,
    "ebike_share": 0.1842,
+   "is_weekend": true
+  },
+  {
+   "date": "2026-05-04",
+   "trips": 20145,
+   "avg_duration_min": 20.07,
+   "ebike_share": 0.1899,
    "is_weekend": false
   },
   {
-   "date": "2026-06-10",
-   "trips": 2793,
-   "avg_duration_min": 16.8,
-   "ebike_share": 0.1808,
-   "is_weekend": false
-  },
-  {
-   "date": "2026-06-11",
-   "trips": 2811,
-   "avg_duration_min": 16.53,
-   "ebike_share": 0.1761,
-   "is_weekend": false
-  },
-  {
-   "date": "2026-06-12",
-   "trips": 3178,
-   "avg_duration_min": 16.68,
+   "date": "2026-05-05",
+   "trips": 29956,
+   "avg_duration_min": 16.51,
    "ebike_share": 0.1894,
    "is_weekend": false
   },
   {
-   "date": "2026-06-13",
-   "trips": 2521,
-   "avg_duration_min": 27.3,
-   "ebike_share": 0.1714,
+   "date": "2026-05-06",
+   "trips": 30718,
+   "avg_duration_min": 16.12,
+   "ebike_share": 0.2008,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-05-07",
+   "trips": 30700,
+   "avg_duration_min": 16.24,
+   "ebike_share": 0.2013,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-05-08",
+   "trips": 28771,
+   "avg_duration_min": 17.32,
+   "ebike_share": 0.2075,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-05-09",
+   "trips": 28165,
+   "avg_duration_min": 22.49,
+   "ebike_share": 0.1966,
    "is_weekend": true
   },
   {
-   "date": "2026-06-14",
-   "trips": 2578,
-   "avg_duration_min": 26.43,
-   "ebike_share": 0.1905,
+   "date": "2026-05-10",
+   "trips": 19169,
+   "avg_duration_min": 18.29,
+   "ebike_share": 0.1907,
    "is_weekend": true
+  },
+  {
+   "date": "2026-05-11",
+   "trips": 26290,
+   "avg_duration_min": 15.57,
+   "ebike_share": 0.1993,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-05-12",
+   "trips": 30882,
+   "avg_duration_min": 16.12,
+   "ebike_share": 0.1999,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-05-13",
+   "trips": 25563,
+   "avg_duration_min": 15.49,
+   "ebike_share": 0.2029,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-05-14",
+   "trips": 27690,
+   "avg_duration_min": 16.01,
+   "ebike_share": 0.2018,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-05-15",
+   "trips": 27547,
+   "avg_duration_min": 16.9,
+   "ebike_share": 0.2122,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-05-16",
+   "trips": 22356,
+   "avg_duration_min": 19.07,
+   "ebike_share": 0.1891,
+   "is_weekend": true
+  },
+  {
+   "date": "2026-05-17",
+   "trips": 21069,
+   "avg_duration_min": 20.14,
+   "ebike_share": 0.1796,
+   "is_weekend": true
+  },
+  {
+   "date": "2026-05-18",
+   "trips": 27888,
+   "avg_duration_min": 15.86,
+   "ebike_share": 0.1789,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-05-19",
+   "trips": 26607,
+   "avg_duration_min": 15.71,
+   "ebike_share": 0.1857,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-05-20",
+   "trips": 29981,
+   "avg_duration_min": 16.07,
+   "ebike_share": 0.1925,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-05-21",
+   "trips": 31863,
+   "avg_duration_min": 17.02,
+   "ebike_share": 0.1984,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-05-22",
+   "trips": 30735,
+   "avg_duration_min": 18.94,
+   "ebike_share": 0.2054,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-05-23",
+   "trips": 28280,
+   "avg_duration_min": 23.4,
+   "ebike_share": 0.192,
+   "is_weekend": true
+  },
+  {
+   "date": "2026-05-24",
+   "trips": 27591,
+   "avg_duration_min": 24.73,
+   "ebike_share": 0.2004,
+   "is_weekend": true
+  },
+  {
+   "date": "2026-05-25",
+   "trips": 26298,
+   "avg_duration_min": 23.67,
+   "ebike_share": 0.2058,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-05-26",
+   "trips": 32287,
+   "avg_duration_min": 18.35,
+   "ebike_share": 0.1898,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-05-27",
+   "trips": 33243,
+   "avg_duration_min": 18.5,
+   "ebike_share": 0.1783,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-05-28",
+   "trips": 34261,
+   "avg_duration_min": 18.5,
+   "ebike_share": 0.1909,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-05-29",
+   "trips": 31296,
+   "avg_duration_min": 19.66,
+   "ebike_share": 0.2093,
+   "is_weekend": false
+  },
+  {
+   "date": "2026-05-30",
+   "trips": 29015,
+   "avg_duration_min": 22.41,
+   "ebike_share": 0.1991,
+   "is_weekend": true
+  },
+  {
+   "date": "2026-05-31",
+   "trips": 25469,
+   "avg_duration_min": 23.45,
+   "ebike_share": 0.1816,
+   "is_weekend": true
+  },
+  {
+   "date": "2026-06-01",
+   "trips": 3,
+   "avg_duration_min": 19.61,
+   "ebike_share": 0.0,
+   "is_weekend": false
   }
  ],
  "hourly": {
   "weekday": [
-   8.0,
-   3.2,
-   2.3,
-   2.4,
-   4.7,
-   18.9,
-   80.6,
-   231.5,
-   322.4,
-   187.0,
-   106.2,
-   117.1,
-   141.9,
-   135.7,
-   127.0,
-   143.7,
-   200.8,
-   328.6,
-   292.6,
-   192.1,
-   127.5,
-   95.1,
-   54.8,
-   25.9
+   156.2,
+   79.7,
+   45.3,
+   35.1,
+   57.0,
+   157.3,
+   633.1,
+   1738.7,
+   3236.3,
+   1831.0,
+   1105.5,
+   1085.1,
+   1247.0,
+   1256.3,
+   1194.7,
+   1356.8,
+   1821.4,
+   3053.2,
+   2885.3,
+   1861.0,
+   1225.0,
+   883.5,
+   678.6,
+   395.2
   ],
   "weekend": [
-   25.0,
-   14.8,
-   9.5,
-   6.0,
-   5.5,
-   7.8,
-   19.5,
-   32.5,
-   72.5,
-   117.8,
-   179.3,
-   222.8,
-   239.0,
-   241.5,
-   251.0,
-   228.5,
-   226.8,
-   178.3,
-   139.5,
-   118.0,
-   81.8,
-   66.0,
-   48.3,
-   31.5
+   372.3,
+   224.1,
+   144.4,
+   95.7,
+   75.8,
+   87.6,
+   148.2,
+   334.5,
+   659.2,
+   1096.9,
+   1462.7,
+   1681.0,
+   1840.5,
+   1861.8,
+   1864.7,
+   1858.4,
+   1858.5,
+   1740.0,
+   1563.1,
+   1238.5,
+   945.1,
+   705.1,
+   597.0,
+   442.0
   ]
  },
  "top_stations": [
   {
-   "station_id": "001001",
-   "station_name": "Waterloo Station 3, Waterloo",
-   "departures": 2343,
-   "arrivals": 2510,
-   "net_flow": 167
-  },
-  {
-   "station_id": "001003",
+   "station_id": "001075",
    "station_name": "Hyde Park Corner, Hyde Park",
-   "departures": 2324,
-   "arrivals": 2135,
-   "net_flow": -189
+   "departures": 13640,
+   "arrivals": 12697,
+   "net_flow": -943
   },
   {
-   "station_id": "001002",
+   "station_id": "001072",
+   "station_name": "Waterloo Station 3, Waterloo",
+   "departures": 13262,
+   "arrivals": 11828,
+   "net_flow": -1434
+  },
+  {
+   "station_id": "002696",
    "station_name": "Waterloo Station 1, Waterloo",
-   "departures": 2138,
-   "arrivals": 2188,
-   "net_flow": 50
-  },
-  {
-   "station_id": "001005",
-   "station_name": "Belgrove Street, King's Cross",
-   "departures": 2008,
-   "arrivals": 2106,
-   "net_flow": 98
-  },
-  {
-   "station_id": "001008",
-   "station_name": "Liverpool Street, Liverpool Street",
-   "departures": 1843,
-   "arrivals": 1881,
-   "net_flow": 38
-  },
-  {
-   "station_id": "001004",
-   "station_name": "Black Lion Gate, Kensington Gardens",
-   "departures": 1708,
-   "arrivals": 1613,
-   "net_flow": -95
-  },
-  {
-   "station_id": "001007",
-   "station_name": "Bank of England Museum, Bank",
-   "departures": 1671,
-   "arrivals": 1617,
-   "net_flow": -54
-  },
-  {
-   "station_id": "001006",
-   "station_name": "Holborn Circus, Holborn",
-   "departures": 1615,
-   "arrivals": 1616,
-   "net_flow": 1
-  },
-  {
-   "station_id": "001012",
-   "station_name": "Albert Gate, Hyde Park",
-   "departures": 1613,
-   "arrivals": 1644,
-   "net_flow": 31
-  },
-  {
-   "station_id": "001009",
-   "station_name": "Duke Street Hill, London Bridge",
-   "departures": 1585,
-   "arrivals": 1561,
-   "net_flow": -24
-  },
-  {
-   "station_id": "001010",
-   "station_name": "Wormwood Street, Liverpool Street",
-   "departures": 1397,
-   "arrivals": 1354,
-   "net_flow": -43
-  },
-  {
-   "station_id": "001013",
-   "station_name": "Soho Square, Soho",
-   "departures": 1361,
-   "arrivals": 1341,
-   "net_flow": -20
-  },
-  {
-   "station_id": "001030",
-   "station_name": "Canada Square, Canary Wharf",
-   "departures": 1336,
-   "arrivals": 1350,
-   "net_flow": 14
+   "departures": 9710,
+   "arrivals": 8690,
+   "net_flow": -1020
   },
   {
    "station_id": "001011",
-   "station_name": "Southwark Street, Bankside",
-   "departures": 1327,
-   "arrivals": 1307,
-   "net_flow": -20
+   "station_name": "Argyle Street, Kings Cross",
+   "departures": 9139,
+   "arrivals": 8166,
+   "net_flow": -973
   },
   {
-   "station_id": "001015",
-   "station_name": "Speakers' Corner 1, Hyde Park",
-   "departures": 1300,
-   "arrivals": 1270,
-   "net_flow": -30
+   "station_id": "001157",
+   "station_name": "Black Lion Gate, Kensington Gardens",
+   "departures": 8456,
+   "arrivals": 8447,
+   "net_flow": -9
+  },
+  {
+   "station_id": "002587",
+   "station_name": "Wormwood Street, Liverpool Street",
+   "departures": 8304,
+   "arrivals": 8352,
+   "net_flow": 48
+  },
+  {
+   "station_id": "001132",
+   "station_name": "Albert Gate, Hyde Park",
+   "departures": 8298,
+   "arrivals": 8220,
+   "net_flow": -78
+  },
+  {
+   "station_id": "000960",
+   "station_name": "Hop Exchange, The Borough",
+   "departures": 8138,
+   "arrivals": 10197,
+   "net_flow": 2059
+  },
+  {
+   "station_id": "300083",
+   "station_name": "Duke Street Hill, London Bridge",
+   "departures": 8088,
+   "arrivals": 8421,
+   "net_flow": 333
+  },
+  {
+   "station_id": "200183",
+   "station_name": "Battersea Park Road, Nine Elms",
+   "departures": 7563,
+   "arrivals": 7604,
+   "net_flow": 41
+  },
+  {
+   "station_id": "001142",
+   "station_name": "Tooley Street, Bermondsey",
+   "departures": 7417,
+   "arrivals": 7504,
+   "net_flow": 87
+  },
+  {
+   "station_id": "022179",
+   "station_name": "Exhibition Road, Knightsbridge",
+   "departures": 7109,
+   "arrivals": 8407,
+   "net_flow": 1298
+  },
+  {
+   "station_id": "001052",
+   "station_name": "Soho Square , Soho",
+   "departures": 7065,
+   "arrivals": 8623,
+   "net_flow": 1558
+  },
+  {
+   "station_id": "001064",
+   "station_name": "Old Street Station, St. Luke's",
+   "departures": 6874,
+   "arrivals": 6916,
+   "net_flow": 42
+  },
+  {
+   "station_id": "001161",
+   "station_name": "Brushfield Street, Liverpool Street",
+   "departures": 6847,
+   "arrivals": 9328,
+   "net_flow": 2481
   }
  ],
  "surplus_stations": [
   {
-   "station_id": "001001",
-   "station_name": "Waterloo Station 3, Waterloo",
-   "departures": 2343,
-   "arrivals": 2510,
-   "net_flow": 167
+   "station_id": "000999",
+   "station_name": "Queen Street 1, Bank",
+   "departures": 6277,
+   "arrivals": 9588,
+   "net_flow": 3311
   },
   {
-   "station_id": "001028",
-   "station_name": "Embankment (Savoy), Strand",
-   "departures": 1235,
-   "arrivals": 1356,
-   "net_flow": 121
+   "station_id": "001067",
+   "station_name": "St. James's Square, St. James's",
+   "departures": 6116,
+   "arrivals": 9052,
+   "net_flow": 2936
   },
   {
-   "station_id": "001005",
-   "station_name": "Belgrove Street, King's Cross",
-   "departures": 2008,
-   "arrivals": 2106,
-   "net_flow": 98
+   "station_id": "001161",
+   "station_name": "Brushfield Street, Liverpool Street",
+   "departures": 6847,
+   "arrivals": 9328,
+   "net_flow": 2481
   },
   {
-   "station_id": "001026",
-   "station_name": "Islington Green, Angel",
-   "departures": 748,
-   "arrivals": 832,
-   "net_flow": 84
+   "station_id": "000982",
+   "station_name": "Holborn Circus, Holborn",
+   "departures": 4541,
+   "arrivals": 6602,
+   "net_flow": 2061
   },
   {
-   "station_id": "001002",
-   "station_name": "Waterloo Station 1, Waterloo",
-   "departures": 2138,
-   "arrivals": 2188,
-   "net_flow": 50
+   "station_id": "000960",
+   "station_name": "Hop Exchange, The Borough",
+   "departures": 8138,
+   "arrivals": 10197,
+   "net_flow": 2059
   },
   {
-   "station_id": "001008",
-   "station_name": "Liverpool Street, Liverpool Street",
-   "departures": 1843,
-   "arrivals": 1881,
-   "net_flow": 38
+   "station_id": "001092",
+   "station_name": "Moorfields, Moorgate",
+   "departures": 5628,
+   "arrivals": 7283,
+   "net_flow": 1655
   },
   {
-   "station_id": "001023",
-   "station_name": "Shoreditch High Street, Shoreditch",
-   "departures": 1041,
-   "arrivals": 1079,
-   "net_flow": 38
+   "station_id": "001052",
+   "station_name": "Soho Square , Soho",
+   "departures": 7065,
+   "arrivals": 8623,
+   "net_flow": 1558
   },
   {
-   "station_id": "001021",
-   "station_name": "Peckham Road, Peckham",
-   "departures": 532,
-   "arrivals": 569,
-   "net_flow": 37
+   "station_id": "000984",
+   "station_name": "Finsbury Circus, Liverpool Street",
+   "departures": 5372,
+   "arrivals": 6740,
+   "net_flow": 1368
   }
  ],
  "deficit_stations": [
   {
-   "station_id": "001003",
-   "station_name": "Hyde Park Corner, Hyde Park",
-   "departures": 2324,
-   "arrivals": 2135,
-   "net_flow": -189
+   "station_id": "001072",
+   "station_name": "Waterloo Station 3, Waterloo",
+   "departures": 13262,
+   "arrivals": 11828,
+   "net_flow": -1434
   },
   {
-   "station_id": "001004",
-   "station_name": "Black Lion Gate, Kensington Gardens",
-   "departures": 1708,
-   "arrivals": 1613,
-   "net_flow": -95
+   "station_id": "200017",
+   "station_name": "Lancaster Gate , Bayswater",
+   "departures": 4218,
+   "arrivals": 2820,
+   "net_flow": -1398
   },
   {
-   "station_id": "001022",
-   "station_name": "Kennington Lane Rail Bridge, Vauxhall",
-   "departures": 807,
-   "arrivals": 741,
-   "net_flow": -66
+   "station_id": "001035",
+   "station_name": "Boston Place, Marylebone",
+   "departures": 5007,
+   "arrivals": 3703,
+   "net_flow": -1304
   },
   {
-   "station_id": "001018",
-   "station_name": "Finsbury Circus, Liverpool Street",
-   "departures": 1104,
-   "arrivals": 1049,
-   "net_flow": -55
+   "station_id": "001101",
+   "station_name": "Knightsbridge, Hyde Park",
+   "departures": 1692,
+   "arrivals": 576,
+   "net_flow": -1116
   },
   {
-   "station_id": "001007",
-   "station_name": "Bank of England Museum, Bank",
-   "departures": 1671,
-   "arrivals": 1617,
-   "net_flow": -54
+   "station_id": "200246",
+   "station_name": "Eagle Wharf Road, Hoxton",
+   "departures": 5216,
+   "arrivals": 4179,
+   "net_flow": -1037
   },
   {
-   "station_id": "001025",
-   "station_name": "Bethnal Green Road, Shoreditch",
-   "departures": 784,
-   "arrivals": 730,
-   "net_flow": -54
+   "station_id": "002696",
+   "station_name": "Waterloo Station 1, Waterloo",
+   "departures": 9710,
+   "arrivals": 8690,
+   "net_flow": -1020
   },
   {
-   "station_id": "001010",
-   "station_name": "Wormwood Street, Liverpool Street",
-   "departures": 1397,
-   "arrivals": 1354,
-   "net_flow": -43
+   "station_id": "002692",
+   "station_name": "Waterloo Station 2, Waterloo",
+   "departures": 4558,
+   "arrivals": 3553,
+   "net_flow": -1005
   },
   {
-   "station_id": "001017",
-   "station_name": "Brushfield Street, Liverpool Street",
-   "departures": 1116,
-   "arrivals": 1077,
-   "net_flow": -39
+   "station_id": "001226",
+   "station_name": "Macclesfield Rd, St Lukes",
+   "departures": 3651,
+   "arrivals": 2658,
+   "net_flow": -993
   }
  ],
  "top_routes": [
   {
    "route_rank": 1,
-   "start_station_name": "Hyde Park Corner, Hyde Park",
-   "end_station_name": "Waterloo Station 3, Waterloo",
-   "trips": 130,
-   "avg_duration_min": 20.54
+   "start_station_name": "Ackroyd Drive, Bow",
+   "end_station_name": "Maplin Street, Mile End",
+   "trips": 918,
+   "avg_duration_min": 4.19
   },
   {
    "route_rank": 2,
-   "start_station_name": "Waterloo Station 3, Waterloo",
-   "end_station_name": "Waterloo Station 1, Waterloo",
-   "trips": 120,
-   "avg_duration_min": 17.48
+   "start_station_name": "Maplin Street, Mile End",
+   "end_station_name": "Ackroyd Drive, Bow",
+   "trips": 818,
+   "avg_duration_min": 4.51
   },
   {
    "route_rank": 3,
-   "start_station_name": "Waterloo Station 1, Waterloo",
-   "end_station_name": "Waterloo Station 3, Waterloo",
-   "trips": 118,
-   "avg_duration_min": 18.54
+   "start_station_name": "Hyde Park Corner, Hyde Park",
+   "end_station_name": "Albert Gate, Hyde Park",
+   "trips": 693,
+   "avg_duration_min": 37.85
   },
   {
    "route_rank": 4,
-   "start_station_name": "Hyde Park Corner, Hyde Park",
-   "end_station_name": "Belgrove Street, King's Cross",
-   "trips": 118,
-   "avg_duration_min": 21.11
+   "start_station_name": "Stratford Station, Stratford",
+   "end_station_name": "Monier Road, Hackney Wick",
+   "trips": 661,
+   "avg_duration_min": 7.71
   },
   {
    "route_rank": 5,
-   "start_station_name": "Bank of England Museum, Bank",
-   "end_station_name": "Waterloo Station 3, Waterloo",
-   "trips": 118,
-   "avg_duration_min": 20.86
+   "start_station_name": "Albert Gate, Hyde Park",
+   "end_station_name": "Hyde Park Corner, Hyde Park",
+   "trips": 641,
+   "avg_duration_min": 31.17
   },
   {
    "route_rank": 6,
-   "start_station_name": "Belgrove Street, King's Cross",
-   "end_station_name": "Waterloo Station 1, Waterloo",
-   "trips": 114,
-   "avg_duration_min": 19.73
+   "start_station_name": "Monier Road, Hackney Wick",
+   "end_station_name": "Stratford Station, Stratford",
+   "trips": 624,
+   "avg_duration_min": 7.67
   },
   {
    "route_rank": 7,
-   "start_station_name": "Hyde Park Corner, Hyde Park",
-   "end_station_name": "Waterloo Station 1, Waterloo",
-   "trips": 111,
-   "avg_duration_min": 19.25
+   "start_station_name": "Black Lion Gate, Kensington Gardens",
+   "end_station_name": "Hyde Park Corner, Hyde Park",
+   "trips": 566,
+   "avg_duration_min": 35.16
   },
   {
    "route_rank": 8,
-   "start_station_name": "Waterloo Station 3, Waterloo",
-   "end_station_name": "Hyde Park Corner, Hyde Park",
-   "trips": 109,
-   "avg_duration_min": 20.52
+   "start_station_name": "Black Lion Gate, Kensington Gardens",
+   "end_station_name": "Palace Gate, Kensington Gardens",
+   "trips": 565,
+   "avg_duration_min": 23.28
   },
   {
    "route_rank": 9,
-   "start_station_name": "Liverpool Street, Liverpool Street",
-   "end_station_name": "Waterloo Station 3, Waterloo",
-   "trips": 109,
-   "avg_duration_min": 16.8
+   "start_station_name": "Hyde Park Corner, Hyde Park",
+   "end_station_name": "Serpentine Car Park, Hyde Park",
+   "trips": 520,
+   "avg_duration_min": 31.64
   },
   {
    "route_rank": 10,
-   "start_station_name": "Waterloo Station 1, Waterloo",
-   "end_station_name": "Hyde Park Corner, Hyde Park",
-   "trips": 106,
-   "avg_duration_min": 20.4
+   "start_station_name": "Hyde Park Corner, Hyde Park",
+   "end_station_name": "Black Lion Gate, Kensington Gardens",
+   "trips": 519,
+   "avg_duration_min": 38.03
   }
  ],
  "bike_mix": [
   {
    "bike_model": "CLASSIC",
-   "trips": 32533,
-   "share": 0.8185,
-   "avg_duration_min": 20.2
+   "trips": 1669951,
+   "share": 0.8075,
+   "avg_duration_min": 18.03
   },
   {
    "bike_model": "EBIKE",
-   "trips": 7213,
-   "share": 0.1815,
-   "avg_duration_min": 16.11
+   "trips": 398050,
+   "share": 0.1925,
+   "avg_duration_min": 19.98
   }
  ],
  "dq_results": [
@@ -482,7 +930,7 @@
    "layer": "silver",
    "status": "PASS",
    "severity": "critical",
-   "observed": "39746",
+   "observed": "2068001",
    "expected": "> 0"
   },
   {
@@ -490,7 +938,7 @@
    "layer": "silver",
    "status": "PASS",
    "severity": "critical",
-   "observed": "39746 distinct / 39746 rows",
+   "observed": "2068001 distinct / 2068001 rows",
    "expected": "distinct == rows"
   },
   {
@@ -522,7 +970,7 @@
    "layer": "silver",
    "status": "PASS",
    "severity": "warning",
-   "observed": "0.25%",
+   "observed": "0.06%",
    "expected": "<= 5%"
   },
   {
@@ -530,16 +978,16 @@
    "layer": "silver",
    "status": "PASS",
    "severity": "warning",
-   "observed": "136 days old",
-   "expected": "<= 100000 days"
+   "observed": "149 days old",
+   "expected": "<= 365 days"
   },
   {
    "check_name": "daily_reconciles_to_silver",
    "layer": "gold",
    "status": "PASS",
    "severity": "critical",
-   "observed": "39746",
-   "expected": "39746"
+   "observed": "2068001",
+   "expected": "2068001"
   },
   {
    "check_name": "daily_unique_dates",
@@ -554,24 +1002,24 @@
    "layer": "gold",
    "status": "PASS",
    "severity": "critical",
-   "observed": "39746",
-   "expected": "39746"
+   "observed": "2068001",
+   "expected": "2068001"
   },
   {
    "check_name": "departures_reconcile_to_silver",
    "layer": "gold",
    "status": "PASS",
    "severity": "critical",
-   "observed": "39746",
-   "expected": "39746"
+   "observed": "2068001",
+   "expected": "2068001"
   },
   {
    "check_name": "arrivals_reconcile_to_silver",
    "layer": "gold",
    "status": "PASS",
    "severity": "critical",
-   "observed": "39746",
-   "expected": "39746"
+   "observed": "2068001",
+   "expected": "2068001"
   },
   {
    "check_name": "net_flow_sums_to_zero",
@@ -586,8 +1034,8 @@
    "layer": "gold",
    "status": "PASS",
    "severity": "critical",
-   "observed": "trips=39746, share=1.0",
-   "expected": "trips=39746, share=1.0"
+   "observed": "trips=2068001, share=1.0",
+   "expected": "trips=2068001, share=1.0"
   }
  ]
 }

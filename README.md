@@ -11,6 +11,9 @@ with one config value.
 **Live dashboard:** https://olayinka08.github.io/tfl-bike-lakehouse
 
 ---
+## Results
+
+Processed **2,068,001** real TfL journeys across **804** docking stations (01 Jun 2026 to DATE_TO). **1,173** invalid records (0.06%) were quarantined with reasons rather than dropped, and **14/14** data quality checks pass on every run. Incremental loading and idempotency verified: a new file added exactly its own rows, and a re-run with no new files changed nothing.
 
 ## The business problem
 
@@ -38,6 +41,16 @@ flowchart LR
     F -->|critical fail| X[Job stops, email alert]
     F --> O[(tfl_ops.dq_results<br/>tfl_ops.pipeline_runs)]
 ```
+
+### Screenshots
+
+| Workflows job run | Unity Catalog lineage |
+|---|---|
+| ![Job run](docs/img/job_run.png) | ![Lineage](docs/img/lineage.png) |
+
+| Data quality results | Incremental runs log |
+|---|---|
+| ![DQ results](docs/img/dq_results.png) | ![Pipeline runs](docs/img/pipeline_runs.png) |
 
 **Orchestration:** one Databricks Workflows job, seven tasks:
 `setup_catalog → bronze_ingest → silver_transform → gold_aggregates → data_quality → (governance, export_dashboard)`
